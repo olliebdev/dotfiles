@@ -1,0 +1,55 @@
+{
+    "reload_style_on_change": true,
+    "layer": "top",
+    "output": "DP-1",
+    "position": "top",
+    "width": 2560,
+    "height": 30,
+    "margin-top": 4,
+    "margin-right": 8,
+    "margin-bottom": 0,
+    "margin-left": 8,
+    "modules-left": [
+        "wlr/taskbar"
+    ],
+    "modules-center": [],
+    "modules-right": [
+        "tray",
+        "bluetooth",
+        "wireplumber",
+        "clock"
+    ],
+    "clock": {
+        "format": "  {:%H:%M -   %a, %d %b %Y}"
+    },
+    "wlr/taskbar": {
+        "format": "{title:.16}",
+        "tooltip-format": "{title}",
+        "on-click": "minimize",
+        "on-click-right": "close",
+        "all-outputs": true
+    },
+    "tray": {
+        "icon-size": 20,
+        "spacing": 10
+    },
+    "wireplumber": {
+        "scroll-step": 5,
+        "max-volume": 100,
+        "format": "vol {volume}%",
+        "nospacing": 1,
+        "on-click": "pwvucontrol",
+        "on-click-right": "qpwgraph"
+    },
+    "bluetooth": {
+        "on-click": "blueman-manager",
+        "format": " {status}",
+        "format-disabled": "",
+        "formmat-connected": " {num_connections} connected",
+        "tooltip": true,
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+    }
+}

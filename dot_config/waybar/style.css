@@ -1,0 +1,84 @@
+@define-color gray1 #080808;
+@define-color gray2 #191919;
+@define-color gray3 #2A2A2A;
+@define-color gray4 #444444;
+@define-color gray5 #555555;
+@define-color gray6 #7A7A7A;
+@define-color gray7 #AAAAAA;
+@define-color gray8 #CCCCCC;
+@define-color gray9 #DDDDDD;
+@define-color black #000000;
+@define-color red #D70000;
+@define-color orange #FFAA88;
+@define-color green #789978;
+@define-color blue #7788AA;
+@define-color lack #708090;
+@define-color luster #deeeed;
+
+* {
+    border: none;
+    border-radius: 0px;
+    min-height: 0;
+    font-family: "Berkeley Mono";
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0;
+}
+
+window#waybar {
+    background: @gray1;
+}
+
+#clock,
+#taskbar button,
+#tray,
+#wireplumber,
+#bluetooth,
+
+#taskbar {
+    padding: 0 6px;
+}
+#taskbar button{
+    background: @gray2;
+    color: @gray7;
+}
+#taskbar button.maximized{
+    background: @gray2;
+    color: @gray7;
+}
+#taskbar button.minimized{
+    background: @gray1;
+    color: @gray7;
+}
+#taskbar button.fullscreen{
+    background: @gray2;
+    color: @gray7;
+}
+#taskbar button.active{
+    background: @lack;
+    color: @gray9;
+}
+
+#bluetooth {
+    background: @gray1;
+    color: @gray7;
+}
+
+#wireplumber{
+    background: @gray1;
+    color: @gray7;
+}
+
+#clock {
+    background: @gray1;
+    color: @gray7;
+}
+#window {
+    margin-right: 40px;
+    margin-left: 40px;
+    font-weight: normal;
+}
+
+#tray {
+    background: @gray2;
+}
