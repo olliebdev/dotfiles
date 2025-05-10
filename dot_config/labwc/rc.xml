@@ -1,0 +1,159 @@
+<?xm version="1.0"?>
+
+<labwc_config>
+
+    <desktops>
+        <number>4</number>
+        <names>
+            <name>Main</name>
+            <name>Dev</name>
+            <name>Social</name>
+            <name>Music</name>
+        </names>
+    </desktops>
+
+    <!--
+                        Keyboard Configuration
+        https://labwc.github.io/labwc-config.5.html#keyboard
+
+        - S (shift)
+        - C (control)
+        - A/Mod1 (alt)
+        - H/Mod3 (hyper)
+        - W/Mod4 (super)
+        - M/Mod5 (meta)
+    -->
+    <keyboard>
+        <!--
+            load the default keybinds
+
+            A-Tab - next window
+            A-S-Tab - previous window
+            A-F4 - close window
+            W-a - toggle maximize
+            A-<arrow> - move window to edge
+            W-<arrow> - resize window to fill half the output
+            A-Space - show window menu
+        -->
+        <default />
+        <!-- Terminal -->
+        <keybind key="W-Return">
+            <action name="Execute" command="ghostty" />
+        </keybind>
+        <!-- Browser -->
+        <keybind key="W-B">
+            <action name="Execute" command="zen-browser" />
+        </keybind>
+        <!-- File Explorer -->
+        <keybind key="W-E">
+            <action name="Execute" command="nautilus" />
+        </keybind>
+        <!-- Rofi -->
+        <keybind key="W-Space">
+            <action name="Execute" command="rofi -show drun" />
+        </keybind>
+        <!-- Screenshot -->
+        <keybind key="W-S-s">
+            <action name="Execute"
+                command="~/.config/labwc/custom/screenshot.sh" />
+        </keybind>
+
+        <keybind key="W-v">
+            <action name="Execute"
+                command="~/.config/labwc/custom/clipboard.sh" />
+        </keybind>
+
+        <!-- Workspaces -->
+        <keybind key="W-1">
+            <action name="GoToDesktop" to="1" wrap="yes" />
+        </keybind>
+        <keybind key="W-2">
+            <action name="GoToDesktop" to="2" wrap="yes" />
+        </keybind>
+        <keybind key="W-3">
+            <action name="GoToDesktop" to="3" wrap="yes" />
+        </keybind>
+        <keybind key="W-4">
+            <action name="GoToDesktop" to="4" wrap="yes" />
+        </keybind>
+
+        <keybind key="W-S-1">
+            <action name="SendToDesktop" to="1" follow="no" />
+        </keybind>
+        <keybind key="W-S-2">
+            <action name="SendToDesktop" to="2" follow="no" />
+        </keybind>
+        <keybind key="W-S-3">
+            <action name="SendToDesktop" to="3" follow="no" />
+        </keybind>
+        <keybind key="W-S-4">
+            <action name="SendToDesktop" to="4" follow="no" />
+        </keybind>
+
+
+        <keybind key="W-d">
+            <action name="ForEach">
+                <query>
+                    <iconified>no</iconified>
+                </query>
+                <then>
+                    <action name="Iconify" />
+                </then>
+            </action>
+        </keybind>
+
+    </keyboard>
+
+    <mouse>
+        <default />
+        <context name="Root">
+            <mousebind button="Right" action="Press">
+                <action name="ShowMenu" menu="root-menu" />
+            </mousebind>
+            <mousebind button="Left" action="Press">
+                <action name="ShowMenu" menu="" />
+            </mousebind>
+        </context>
+    </mouse>
+
+    <theme>
+        <name>lackluster</name>
+        <titlebar>
+            <layout>desk,shade:iconify,max,close</layout>
+            <showTitle>yes</showTitle>
+        </titlebar>
+        <cornerRadius>0</cornerRadius>
+        <font place="ActiveWindow">
+            <name>BerkeleyMono Nerd Font Mono</name>
+            <weight>Bold</weight>
+            <size>10</size>
+        </font>
+        <font place="InactiveWindow">
+            <name>BerkeleyMono Nerd Font Mono</name>
+            <weight>Normal</weight>
+            <size>10</size>
+        </font>
+        <font place="MenuHeader">
+            <name>BerkeleyMono Nerd Font Mono</name>
+            <weight>Normal</weight>
+            <size>10</size>
+        </font>
+        <font place="MenuItem">
+            <name>BerkeleyMono Nerd Font Mono</name>
+            <weight>Normal</weight>
+            <size>10</size>
+        </font>
+        <font place="ActiveOnScreenDisplay">
+            <name>BerkeleyMono Nerd Font Mono</name>
+            <weight>Bold</weight>
+            <size>10</size>
+        </font>
+        <font place="InactiveOnScreenDisplay">
+            <name>BerkeleyMono Nerd Font Mono</name>
+            <weight>Normal</weight>
+            <size>10</size>
+        </font>
+
+    </theme>
+
+</labwc_config>

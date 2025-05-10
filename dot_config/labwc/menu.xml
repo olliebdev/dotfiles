@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu>
+
+    <menu id="apps-menu" label="Apps">
+        <item label="Spotify">
+            <action name="Execute" command="spotify-launcher" />
+        </item>
+
+        <item label="Discord">
+            <action name="Execute" command="discord" />
+        </item>
+
+        <item label="Steam">
+            <action name="Execute" command="steam" />
+        </item>
+
+    </menu>
+
+    <menu id="power-menu" label="Exit">
+        <item label="Suspend">
+            <action name="Execute" command="systemctl suspend" />
+        </item>
+
+        <item label="Reboot">
+            <action name="Execute" command="reboot" />
+        </item>
+
+        <item label="Poweroff">
+            <action name="Execute" command="shutdown now" />
+        </item>
+
+        <item label="Logout">
+            <action name="Exit" />
+        </item>
+    </menu>
+
+
+    <menu id="root-menu">
+
+        <item label="Search">
+            <action name="Execute" command="rofi -show drun" />
+        </item>
+
+        <item label="Screenshot">
+            <action name="Execute" command="~/.config/labwc/custom/screenshot.sh" />
+        </item>
+
+
+        <item label="Terminal">
+            <action name="Execute" command="ghostty" />
+        </item>
+
+        <item label="Web Browser">
+            <action name="Execute" command="zen-browser" />
+        </item>
+
+        <item label="File Manager">
+            <action name="Execute" command="nautilus" />
+        </item>
+
+        <item label="Code">
+            <action name="Execute" command="jetbrains-toolbox" />
+        </item>
+
+        <separator />
+
+        <menu id="apps-menu" />
+
+        <separator />
+
+
+        <menu id="system-menu" />
+        <menu id="power-menu" />
+
+
+        <item label="Reconfigure">
+            <action name="Reconfigure" />
+        </item>
+
+
+    </menu>
+
+
+    <menu id="client-menu">
+        <item label="Minimize">
+            <action name="Iconify" />
+        </item>
+        <item label="Maximize">
+            <action name="ToggleMaximize" />
+        </item>
+        <item label="Fullscreen">
+            <action name="ToggleFullscreen" />
+        </item>
+        <item label="Roll Up/Down">
+            <action name="ToggleShade" />
+        </item>
+        <item label="Decorations">
+            <action name="ToggleDecorations" />
+        </item>
+        <item label="Always on Top">
+            <action name="ToggleAlwaysOnTop" />
+        </item>
+        <!--
+    Any menu with the id "workspaces" will be hidden
+    if there is only a single workspace available.
+  -->
+        <menu id="workspaces" label="Workspace">
+            <item label="Move Left">
+                <action name="SendToDesktop" to="left" />
+            </item>
+            <item label="Move Right">
+                <action name="SendToDesktop" to="right" />
+            </item>
+            <separator />
+            <item label="Always on Visible Workspace">
+                <action name="ToggleOmnipresent" />
+            </item>
+        </menu>
+        <!--
+    openbox default workspace selector
+    to use replace above workspace menu with the example below
+    the label is required, but you can change the text.
+
+    <menu id="client-send-to-menu" label="Send to..." />
+  -->
+        <item label="Close">
+            <action name="Close" />
+        </item>
+    </menu>
+
+</openbox_menu>
