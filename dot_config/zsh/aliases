@@ -1,0 +1,37 @@
+alias waybar-restart="killall -SIGUSR2 waybar"
+alias vim="nvim"
+alias vi="nvim"
+
+alias pmi="sudo pacman -S"
+alias pms="sudo pacman -Ss"
+alias pmu="sudo pacman -Syu"
+alias pmr="sudo pacman -R"
+alias pmrd="sudo pacman -Rs"
+alias pmrdc="sudo pacman -Rns"
+alias pmro="pacman -Rns $(pacman -Qtdq)"
+alias pmqf="sudo pacman -Ql"
+alias pmq="sudo pacman -Qe"
+
+alias yayi="yay -S"
+alias yays="yay -Ss"
+alias yayu="yay -Syu"
+alias yayr="yay -R"
+alias yayrd="yay -Rs"
+alias yayrdc="yay -Rns"
+
+alias gs="git status"
+alias ga="git add"
+alias gp="git push"
+alias gpo="git push origin"
+alias gr="git branch -r"
+alias gplo="git pull origin"
+alias gb="git branch"
+alias gc="git commit"
+alias gd="git diff"
+alias gco="git checkout"
+
+alias ls="ls --color=auto"
+alias la="ls -a --color=auto"
+
+alias d='dirs -v'
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
