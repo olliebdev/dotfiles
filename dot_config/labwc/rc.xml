@@ -155,5 +155,11 @@
         </font>
 
     </theme>
-
+    <windowSwitcher show="yes" preview="yes" outlines="yes" allWorkspaces="no">
+        <fields>
+            <field content="icon" width="5%" />
+            <field content="desktop_entry_name" width="30%" />
+            <field content="title" width="65%" />
+        </fields>
+    </windowSwitcher>
 </labwc_config>
