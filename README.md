@@ -10,7 +10,7 @@ chezmoi init --apply olliebdev
 - FM: Nautilus / Yazi
 - Shell: ZSH
 - Browser: Zen
-- Editor: NeoVim
+- Editor: [NeoVim](https://github.com/olliebdev/nvim)
 - Bar: Waybar
 - Launcher: rofi-wayland
 - Notifications: mako
