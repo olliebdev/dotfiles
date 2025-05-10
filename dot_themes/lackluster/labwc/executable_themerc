@@ -1,0 +1,39 @@
+# https://labwc.github.io/labwc-theme.5.html
+# Decorator
+window.active.title.bg.color: #191919
+window.inactive.title.bg.color: #080808
+window.*.label.text.color: #CCCCCC
+window.*.button.*.image.color: #AAAAAA
+
+window.active.label.text.color: #DDDDDD
+window.active.button.*.image.color: #DDDDDD
+
+
+# Borders
+border.width: 0
+
+# Title
+window.titlebar.padding.width: 10
+window.titlebar.padding.height: 1
+window.label.text.justify: center
+
+# Menu
+menu.border.width: 6
+menu.separator.width: 2
+menu.separator.padding.width: 10
+menu.separator.padding.height: 2
+menu.overlap.x: -8
+menu.*.bg.color: #080808
+menu.*.color: #080808
+menu.title.text.color: #CCCCCC
+menu.items.text.color: #CCCCCC
+menu.items.active.disabled.text.color: #AAAAAA
+menu.items.active.text.color: #DDDDDD
+menu.title.text.justify: center
+menu.items.active.bg.color: #708090
+
+# OSD
+osd.border.width: 1
+osd.border.color: #191919
+osd.bg.color: #191919
+osd.label.bg.color: #191919
