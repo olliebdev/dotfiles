@@ -57,10 +57,14 @@
             <action name="Execute"
                 command="~/.config/labwc/custom/screenshot.sh" />
         </keybind>
-
+        <!-- Clipboard History -->
         <keybind key="W-v">
             <action name="Execute"
                 command="~/.config/labwc/custom/clipboard.sh" />
+        </keybind>
+        <!-- Close Windnow -->
+        <keybind key="W-S-q">
+            <action name="Close" />
         </keybind>
 
         <!-- Workspaces -->
