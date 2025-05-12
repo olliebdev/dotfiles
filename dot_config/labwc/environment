@@ -12,3 +12,5 @@ GBM_BACKEND=nvidia-drm
 __GLX_VENDOR_LIBRARY_NAME=nvidia
 LIBVA_DRIVER_NAME=nvidia
 __GL_GSYNC_ALLOWED
+
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh

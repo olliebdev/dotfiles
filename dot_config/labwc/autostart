@@ -1,10 +1,10 @@
-kanshi >/dev/null 2>&1 &
-waybar >/dev/null 2>&1 &
-mako >/dev/null 2>&1 &
-wl-paste --watch cliphist store &
+dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 /usr/lib/polkit-kde-authentication-agent-1 >/dev/null 2>&1 &
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
-easyeffects > /dev/null 2>&1 &
-pqwgraph > /dev/null 2>&1 &
-opendeck > /dev/null 2>&1 &
+gnome-keyring-daemon --start --components=pkcs11,secrets,ssh -d
+
+kanshi &
+waybar &
+mako &
+wl-paste --watch cliphist store &
+opendeck &
 
